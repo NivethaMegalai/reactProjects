@@ -113,14 +113,14 @@ function Productlist() {
               <div className="row" key={prodList.id}>
                 {prodList.productLis.map((sub, subindex) => (
                   <div className="col-md-6">
-                    <div class="card mb-3">
-                      <div class="card-body">
-                        <h5 class="card-title" key={subindex}>
+                    <div className="card mb-3">
+                      <div className="card-body">
+                        <h5 className="card-title" key={subindex}>
                           {sub.productName}
                         </h5>
-                        <p class="card-text">{sub.price}</p>
-                        <p class="card-text">
-                          <small class="text-muted">{sub.company}</small>
+                        <p className="card-text">{sub.price}</p>
+                        <p className="card-text">
+                          <small className="text-muted">{sub.company}</small>
                         </p>
                       </div>
                     </div>

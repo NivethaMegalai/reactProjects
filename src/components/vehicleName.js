@@ -1,27 +1,27 @@
 
 import React, { useState } from "react";
-import logo from '../../public/assets/images/car.jpg'
+// import logo from '../../public/assets/images/car.jpg'
 
 const vehicleList = [
   {
     displayname: "car",
-    imageUrl: "./assets/images/car.jpg",
+    imageUrl: "assets/images/car.jpg",
   },
   {
     displayname: "bus",
-    imageUrl: "./assets/images/bus.jpg",
+    imageUrl: "assets/images/bus.jpg",
   },
   {
     displayname: "bike",
-    imageUrl: "./assets/images/bike.jpg",
+    imageUrl: "assets/images/bike.jpg",
   },
   {
     displayname: "scooty",
-    imageUrl: "./assets/images/scooty.jpg",
+    imageUrl: "assets/images/scooty.jpg",
   },
   {
-    displayname: "Bicycle",
-    imageUrl: "./assets/images/bicycle.jpg",
+    displayname: "bicycle",
+    imageUrl: "assets/images/bicycle.jpg",
   },
 ];
 function VehicleApp() {
@@ -52,24 +52,27 @@ function VehicleApp() {
           <img src={showList.imageUrl} alt={showList[0].displayname} /> */}
 
           <form className="text-center">
-            <label>Type Vehicle and submit to see the magic: </label>
+           
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-
             <div className="text-center">
-              <input type="button" value="Submit" onClick={handleSubmit} />
+             example: car,bike,bus,scooty,bicycle
+            </div>
+            <div className="text-center">
+              <button className="btn btn-primary" type="button" onClick={handleSubmit} >Submit</button>
             </div>
             <div className="text-center">
               <h2>Type and submit to see results</h2>
-              <img src="../../public/assets/images/car.jpg" alt='vecchile'/>
+              {/* <img src="assets/images/car.jpg" alt='vecchile'/> */}
               {change ? (
                 <div>
                   <h4>{showList.displayname}</h4>
                   <img
-                    src={require(`${showList.imageUrl}`)}
+                    src={showList.imageUrl}
+                    // src={require(`${showList.imageUrl}`)}
                     alt={showList.displayname}
                   />
                 </div>

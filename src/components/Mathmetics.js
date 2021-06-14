@@ -4,18 +4,16 @@ function MathsApp() {
     const [mathVal, setmathVal] = useState("");
     const [finalVal, setfinalVal] = useState("");
     const handleSubmit = (operation) => {
-console.log(mathVal)
-console.log(operation)
 if(mathVal){
     switch(operation) {
         case 'square':
           return setfinalVal(mathVal*mathVal);
-          case 'Expoential':
+          case 'Exponential':
           return setfinalVal(Math.exp(mathVal));
           case 'Precent':
           return setfinalVal(mathVal+'%');
         default:
-          return 'foo';
+          return setfinalVal(mathVal);
       }
 }
       };
