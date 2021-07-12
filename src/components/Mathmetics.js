@@ -24,8 +24,7 @@ if(mathVal){
      <div>
           <div className="list-group">
         <div className="list-group-item animated fadeIn">
-          {/* <h4>{showList.displayname}</h4>
-          <img src={showList.imageUrl} alt={showList[0].displayname} /> */}
+    
 
           <form className="text-center">
             <label>Enter Number: </label>

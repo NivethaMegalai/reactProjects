@@ -74,9 +74,6 @@ function Productlist() {
   const [value, setValue] = useState(0);
   const change = (event) => {
     setValue(+event.target.value);
-    //  console.log(event.target.value)
-    //  console.log(event.target)
-    //  console.log(event)
   };
 
   return (

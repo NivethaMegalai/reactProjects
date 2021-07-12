@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-// import logo from '../../public/assets/images/car.jpg'
 
 const vehicleList = [
   {
